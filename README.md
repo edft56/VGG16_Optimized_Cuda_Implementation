@@ -13,6 +13,6 @@ However, detailed performance results per layer are shown in the detailed explan
 | Inference            |  84ms  |    91.5ms    |    116ms   |
 | Training             | 243ms  |      -       |    355ms   |
 
-While cleaning up the code I also tested it on a newer RTX 3080 card. Training times are as fast as training on Tensor Cores using FP16 mixed precision mode on Tensorflow which, to be hosnest, was quite a surprise. Probably goes to show how latency-bound such workloads are.  
+While cleaning up the code I also tested it on a newer RTX 3080 card. Training times are as fast as training on Tensor Cores using FP16 mixed precision mode on Tensorflow which, to be honest, was quite a surprise. Probably goes to show how latency-bound such workloads are.  
 
 *PS: Pls no judging my messy code. C++ and templates made my life difficult.*
