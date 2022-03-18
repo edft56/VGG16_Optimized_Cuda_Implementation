@@ -4,6 +4,7 @@ btdb file contains the input transforms needed for Winograd Conv and atma contai
 
 The GPU kernels were originally optimized for a gtx 1080. Convolutions are implemented using the Winograd F(4,3) algorithm.  
 A detailed explanation is presented in the aptly named pdf which is comprised of the relevant parts of my Master's thesis. There, among other things, I attempt to explain step-by-step how to write optimized matrix-multiply kernels for the GPU. It is quite an interesting and complex process!
+Layer fusion is performed whenever it's possible and it makes a difference.
 
 A quick summary of performance results for a batch of 32 images is shown below. Some functions like weight update and softmax loss are missing from Nvidia's Cudnn and thus no results for Training are shown.  
 However, detailed performance results per layer are shown in the detailed explanation pdf.
